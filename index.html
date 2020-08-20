@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valenzuela Luna</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container card-container"  >
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-12 col-md-6">
+        <!-- CARD -->
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="./img/logo2.jpg">
+          <div class="card-body" style="text-align: center;">
+            <span>
+              <b>Numero de pago: </b> 
+              <span class="ref-text"></span>
+            </span>
+            <br>
+            <span>
+              <b>Valor: </b>
+              <span class="amount-text"></span>
+            </span>
+            <br>
+            <br>
+            <a href="#" id="wompi-button" class="btn btn-primary">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+              </svg>
+              <span style="vertical-align: middle;" >Pagar</span>
+              </a>
+          </div>
+        </div>
+
+
+          <!-- TOAST Satisfactorio -->
+          <div class="toast toast-s" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#689f38"></rect></svg>
+              <strong class="mr-auto">Pago satisfactorio</strong>
+              <small class="ref-info"><b>N° Referencia:</b>   <span></span> </small>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              El pago se ha realizado de forma satisfactoria.
+            </div>
+          </div>
+  
+          <!-- TOAST Erroneo -->
+          
+          <div class="toast toast-e" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#c62828"></rect></svg>
+              <strong class="mr-auto">Pago rechazado</strong>
+              <small class="ref-info"><b>N° Referencia:</b>   <span></span> </small>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              El pago ha sido rechazado, por favor verifique con la entidad bancaria o vuelva a intentarlo
+            </div>
+          </div>
+
+          <!-- TOAST Amount invalido -->
+          <div class="toast toast-a" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#c62828"></rect></svg>
+              <strong class="mr-auto">Link de pago no valido</strong>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              Por favor verifique que el valor de pago sea correcto
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script type="text/javascript" src="https://checkout.wompi.co/widget.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
