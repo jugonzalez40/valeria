@@ -8,34 +8,58 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="container card-container"  >
-    <div class="row justify-content-center">
-      <div class="col-12 col-sm-12 col-md-6">
-        <!-- CARD -->
-        <div class="card" style="width: 100%;">
-          <img class="card-img-top" src="./img/logo2.jpg">
-          <div class="card-body" style="text-align: center;">
-            <span>
-              <b>Numero de pago: </b> 
-              <span class="ref-text"></span>
-            </span>
-            <br>
-            <span>
-              <b>Valor: </b>
-              <span class="amount-text"></span>
-            </span>
-            <br>
-            <br>
-            <a href="#" id="wompi-button" class="btn btn-primary">
-              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
-              </svg>
-              <span style="vertical-align: middle;" >Pagar</span>
-              </a>
+
+  <div class="full-frame">
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 brand-container">
+            <img src="./img/logo.png" alt="">
           </div>
         </div>
+      </div>
+    </header>
+    <!-- CONTENT -->
+    <div class="container">
+      <!-- TITLE -->
+      <div class="row justify-content-center">
+        <div class="col-md-12 body-container">
+          <p class="v-title">¡el primer mayorista</p>
+          <p class="v-title">de colombia!</p>
+        </div>
+      </div>
+      <!-- image -->
+      <div class="row justify-content-center">
+        <div class="col-md-7 image-container">
+          <img src="./img//f1.png" alt="">
+        </div>
+        <div class="col-md-6 image-container">
+          <img src="./img//f2.png" alt="">
+        </div>
+
+      </div>
+
+      <!-- Button -->
+      <div class="row justify-content-center">
+        <div class="col-lg-4 button-container">
+          <div class="card-button">
+            <button id="wompi-button" class="pay-button ">Pagar</button>
+            <div class="methods">
+              <img src="./img/method.png" alt="">
+              <h6>Linea de Atención: 300 268 95 15</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
 
 
           <!-- TOAST Satisfactorio -->
@@ -82,10 +106,6 @@
               Por favor verifique que el valor de pago sea correcto
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
